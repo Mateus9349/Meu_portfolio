@@ -1,0 +1,10 @@
+$emphasis: #34495E;
+$bg: #F5F5F5;
+$interactive: #7FB3D5;
+$success: #2ECC71;
+$text: #000000;
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+}

@@ -1,0 +1,31 @@
+@import '../../styles/variaveis';
+
+.container{
+    @include flexCenter(row);
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 28PX;
+    
+    .image{
+        max-width: 30%;
+        border-radius: 35px;
+    }
+
+    .containerSkills{
+        @include flexCenter(column);
+        gap: 10px;
+        align-items: center;
+
+        .title{
+            font-size: 24px;
+        }
+
+        ul{
+            .skill{
+                list-style-type: disc;
+            }
+        }
+    }
+}

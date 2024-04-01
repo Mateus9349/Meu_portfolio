@@ -1,0 +1,30 @@
+@import '../../styles/variaveis';
+
+.container{
+    @include flexCenter(row);
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+    background-color: $emphasis;
+
+    .containerSoftSkills{
+        margin: 25px 0 25px 0;
+
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            @include flexCenter(column);
+            gap: 10px;
+        }
+    }
+
+    .containerDadosPessoais{
+        margin: 25px 0 25px 0;
+        @include flexCenter(column);
+        gap: 10px;
+    }
+}
